@@ -1,6 +1,6 @@
 import playwright from 'playwright';
 import { addDays, addMonths, nextSunday, nextMonday, nextTuesday, nextWednesday, nextThursday, nextFriday, nextSaturday, format } from 'date-fns';
-import { DEPARTURE_CITY, DEPARTURE_CITY_URL_PARAM, PRICE_THRESHOLD, NUMBER_OF_WEEKENDS_TO_SEARCH, CURRENCY_SYMBOL, DEPARTURE_DAY, RETURN_DAY, MONTHS_DELAY, DIRECT_FLIGHT, DEFAULT_TIMEOUT } from './constants.js'
+import { DEPARTURE_CITY, DEPARTURE_CITY_URL_PARAM, PRICE_THRESHOLD, NUMBER_OF_WEEKENDS_TO_SEARCH, ADD_TROLLY, ADD_BAGGAGE, CURRENCY_SYMBOL, DEPARTURE_DAY, RETURN_DAY, MONTHS_DELAY, DIRECT_FLIGHT, DEFAULT_TIMEOUT, RETURN_CITY_URL_PARAM } from './constants.js'
 
 const daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 const daysOfWeekFunctions = {
@@ -21,11 +21,21 @@ const getUpcomingWeekends = () => {
         const firstFlight = formatDate(currentDate);
         const secondFlight = formatDate(addDays(currentDate, (daysOfWeek.indexOf(RETURN_DAY.toLowerCase()) - daysOfWeek.indexOf(DEPARTURE_DAY.toLowerCase()) + 7) % 7));
         weekends.push({ firstFlight, secondFlight });
-        currentDate = addDays(currentDate, ((daysOfWeek.indexOf(RETURN_DAY.toLowerCase()) - daysOfWeek.indexOf(DEPARTURE_DAY.toLowerCase()) + 7) % 7) + 1);
+        currentDate = addDays(currentDate, 7);
     }
     return weekends;
 }
 const directFlight = DIRECT_FLIGHT ? "?stopNumber=0~true" : "";
+let bags = "";
+if (ADD_TROLLY || ADD_BAGGAGE) {
+    if (ADD_TROLLY && ADD_BAGGAGE) {
+        bags = "&bags=1.1-"
+    } else if (ADD_BAGGAGE) {
+        bags = "&bags=0.1-"
+    } else if (ADD_TROLLY) {
+        bags = "&bags=1.0-"
+    }
+}
 const timeout = DEFAULT_TIMEOUT * 1000;
 const main = async () => {
     const browser = await playwright.chromium.launch({ headless: false });
@@ -34,7 +44,7 @@ const main = async () => {
 
     let cookiesAccepted = false;
     for (const { firstFlight: from, secondFlight: to } of upcomingWeekends) {
-        await page.goto(`https://www.kiwi.com/en/search/tiles/${DEPARTURE_CITY_URL_PARAM}/anywhere/${from}/${to}${directFlight}&sortAggregateBy=price`);
+        await page.goto(`https://www.kiwi.com/en/search/tiles/${DEPARTURE_CITY_URL_PARAM}/${RETURN_CITY_URL_PARAM}/${from}/${to}${directFlight}&sortAggregateBy=price${bags}`);
         await page.waitForTimeout(timeout);
 
         if (!cookiesAccepted) {
@@ -74,7 +84,7 @@ const main = async () => {
                     await cheapestFlightCardLocator.screenshot({ path: `(${city})--(${actualPrice}$)--(${from.slice(5)} to ${to.slice(5)}).png` });
                 }
 
-                await page.goto(`https://www.kiwi.com/en/search/tiles/${DEPARTURE_CITY_URL_PARAM}/anywhere/${from}/${to}${directFlight}&sortAggregateBy=price`);;
+                await page.goto(`https://www.kiwi.com/en/search/tiles/${DEPARTURE_CITY_URL_PARAM}/anywhere/${from}/${to}${directFlight}&sortAggregateBy=price${bags}`);
                 await page.waitForTimeout(timeout);
             }
         }
