@@ -35,7 +35,7 @@ export const DEFAULT_TIMEOUT = 5;
 export const CURRENCY_SYMBOL = '$';
 
 // maximum price you want to pay (for both flights combined)
-export const PRICE_THRESHOLD = 30;
+export const PRICE_THRESHOLD = 100;
 
 // number of weekends from now forward to search
 export const NUMBER_OF_WEEKENDS_TO_SEARCH = 5;
