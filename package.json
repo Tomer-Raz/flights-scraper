@@ -1,0 +1,21 @@
+{
+  "name": "flights",
+  "author": {
+    "name": "Tomer Raz",
+    "github": "https://github.com/tomer-raz",
+    "linkedin": "https://linkedin.com/in/tomer-raz"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "playwright": "^1.26.1"
+  }
+}
