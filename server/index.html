@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    table.table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table.table th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+      text-align: left;
+      padding: 10px;
+    }
+
+    table.table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+  </style>
+  <head>
+    <title>SQLite3 with Sequelize Example Starter</title>
+    <meta name="description" content="SQLite3 with Sequelize example starter" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>vessels</h1>
+    </header>
+
+    <main>
+      <a href="https://www.vesseltracker.com/en/vessels.html" target="_blank">
+        <button class="btn btn-primary btn-lg">Find vessels here</button> </a
+      ><br /><br/>
+      <form action="/new" method="POST">
+        <input
+          name="vessel"
+          type="text"
+          value=""
+          placeholder="Vessel"
+          required
+        /><br />
+        <input
+          name="flag"
+          type="text"
+          value=""
+          placeholder="Flag"
+          required
+        /><br />
+        <input
+          name="imo"
+          type="number"
+          value=""
+          placeholder="IMO"
+          required
+        /><br />
+        <input
+          name="mmsi"
+          type="number"
+          value=""
+          placeholder="MMSI"
+          required
+        /><br />
+        <input
+          name="phone"
+          type="number"
+          value=""
+          placeholder="Phone"
+          required
+        /><br />
+        <input
+          name="email"
+          type="text"
+          value=""
+          placeholder="Email"
+          required
+        /><br />
+        <input
+          name="comment"
+          type="text"
+          value=""
+          placeholder="Comment"
+          required
+        /><br />
+        <button type="submit">Add</button>
+      </form>
+      <section class="vessels">
+        <ul id="vessels"></ul>
+      </section>
+    </main>
+
+    <script>
+      (() => {
+        fetch("/select")
+          .then((response) => response.json())
+          .then((vessels) => {
+            const table = document.createElement("table");
+            table.setAttribute("class", "table");
+            const thead = document.createElement("thead");
+            const tbody = document.createElement("tbody");
+            const headings = [
+              "vessel",
+              "flag",
+              "imo",
+              "mmsi",
+              "id",
+              "email",
+              "comment",
+            ];
+            let row = document.createElement("tr");
+            headings.forEach((heading) => {
+              const th = document.createElement("th");
+              th.textContent = heading;
+              row.appendChild(th);
+            });
+            thead.appendChild(row);
+            table.appendChild(thead);
+            vessels.forEach((vessel) => {
+              let row = document.createElement("tr");
+              const vesselTd = document.createElement("td");
+              vesselTd.textContent = vessel.name;
+              row.appendChild(vesselTd);
+
+              const flagTd = document.createElement("td");
+              flagTd.textContent = vessel.flag;
+              row.appendChild(flagTd);
+
+              const imoTd = document.createElement("td");
+              imoTd.textContent = vessel.imo;
+              row.appendChild(imoTd);
+
+              const mmsiTd = document.createElement("td");
+              mmsiTd.textContent = vessel.mmsi;
+              row.appendChild(mmsiTd);
+
+              const idTd = document.createElement("td");
+              idTd.textContent = vessel.id;
+              row.appendChild(idTd);
+
+              const emailTd = document.createElement("td");
+              emailTd.textContent = vessel.email;
+              row.appendChild(emailTd);
+
+              const commentTd = document.createElement("td");
+              commentTd.textContent = vessel.comment;
+              row.appendChild(commentTd);
+
+              tbody.appendChild(row);
+            });
+            table.appendChild(tbody);
+            document.querySelector("#vessels").appendChild(table);
+          });
+      })();
+    </script>
+  </body>
+</html>

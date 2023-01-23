@@ -1,8 +1,8 @@
 // day of departure
-export const DEPARTURE_DAY = 'thursday';
+export const DEPARTURE_DAY = 'wednesday';
 
 // day of return
-export const RETURN_DAY = 'monday';
+export const RETURN_DAY = 'sunday';
 
 // only direct flights
 export const DIRECT_FLIGHT = true;
@@ -14,7 +14,7 @@ export const ADD_TROLLY = false;
 export const ADD_BAGGAGE = false;
 
 // number of months from now (to start the search). if set to 0, the search will start from today
-export const MONTHS_DELAY = 0;
+export const MONTHS_DELAY = 1;
 
 // city of departure
 export const DEPARTURE_CITY = 'Tel Aviv';
@@ -35,7 +35,7 @@ export const DEFAULT_TIMEOUT = 5;
 export const CURRENCY_SYMBOL = '$';
 
 // maximum price you want to pay (for both flights combined)
-export const PRICE_THRESHOLD = 100;
+export const PRICE_THRESHOLD = 250;
 
 // number of weekends from now forward to search
-export const NUMBER_OF_WEEKENDS_TO_SEARCH = 5;
+export const NUMBER_OF_WEEKENDS_TO_SEARCH = 3;
