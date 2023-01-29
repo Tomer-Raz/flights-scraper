@@ -57,10 +57,5 @@ export const LogoItem = styled.div`
     max-width:40vw;
     margin-top: 5vh;
     background-image: none;
-    background: radial-gradient(
-      closest-side at 50% 50%,
-      #6A42D1 0%,
-      #23222200 100%
-    );
   }
 `;

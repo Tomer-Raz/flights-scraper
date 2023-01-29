@@ -7,17 +7,8 @@ export const ClientsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(${triangles}),
-    radial-gradient(closest-side at 60% 50%, #422e9a -20%, #23222200 100%);
-  background-repeat: no-repeat;
-  background-position: 75% 100%;
   @media only screen and (max-width: 980px) {
     background-image: none;
-    background: radial-gradient(
-      closest-side at 50% 60%,
-      #422e9a 0%,
-      #23222200 100%
-    );
   }
 `;
 export const ClientContainer = styled.div`

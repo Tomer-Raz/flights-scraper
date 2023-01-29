@@ -15,12 +15,14 @@ import {
   INTRO_TXT3,
   EXPLORE_BTN_TXT,
 } from "../../../constants/texts";
+import{ ReactComponent as VegvizerLogo } from "../../../assets/header-container/vegvizerLogo.svg";
 
 const Main = () => {
   return (
     <MainWrapper>
       <MainTitle>{GREET_TXT}</MainTitle>
-      <Intro>
+      <VegvizerLogo/>
+      <Intro style={{marginTop:'20px'}}>
         {INTRO_TXT1} <Span>{INTRO_TXT2}</Span>
       </Intro>
       <Intro>{INTRO_TXT3}</Intro>

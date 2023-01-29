@@ -22,21 +22,24 @@ export const MainTitle = styled.h1`
 `;
 
 export const Intro = styled.p`
-text-align: center;
-margin:auto;
-font-size: 22px;
-@media only screen and (max-width:680px) {
-  font-size: 17px;
-  max-width: 80%;
-}
-`
+  font-family: "ImportedMedium";
+  margin-top: 20px;
+  text-align: center;
+  margin: auto;
+  font-size: 22px;
+  @media only screen and (max-width: 680px) {
+    font-size: 17px;
+    max-width: 80%;
+  }
+`;
 export const Span = styled.span`
-@media only screen and (max-width: 680px) {
-  min-width:90%;
-  content: "\A";
-  white-space: pre;
-}
-`
+  margin-top: 20px;
+  @media only screen and (max-width: 680px) {
+    min-width: 90%;
+    content: "\A";
+    white-space: pre;
+  }
+`;
 
 export const ExploreWrapper = styled.div`
   font-family: "ImportedMedium";
@@ -58,5 +61,5 @@ export const ExploreText = styled.div`
   letter-spacing: 0.4px;
   border: 1px solid #ffffff;
   padding: 15px 20px 15px 20px;
-  cursor:pointer;
+  cursor: pointer;
 `;

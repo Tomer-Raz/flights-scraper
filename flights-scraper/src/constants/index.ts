@@ -126,87 +126,15 @@ export const CLIENTS = [
 ];
 
 //TEAM
-const inLink = "https://www.youtube.com/";
+const inLink = "https://il.linkedin.com/in/tomer-raz-578b2421b";
 export const MEMBERS = [
-  {
-    id: 0,
-    img: assets.img3,
-    in: inLink,
-    title: "Tal Vegvizer, CEO & Founder",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
-  {
-    id: 1,
-    img: assets.img5,
-    in: inLink,
-    title: "Emma Gogo, CTO",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
-  {
-    id: 2,
-    img: assets.img6,
-    in: inLink,
-    title: "Eti Dawha, Software Engineer",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
   {
     id: 3,
     img: assets.img4,
     in: inLink,
-    title: "Tal Vegvizer, CEO & Founder",
+    title: "Tomer Raz, Full Stack Developer",
     description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
-  {
-    id: 4,
-    img: assets.img7,
-    in: inLink,
-    title: "Tal Vegvizer, CEO & Founder",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
-  {
-    id: 5,
-    img: assets.img0,
-    in: inLink,
-    title: "Emma Gogo, CTO",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
-  {
-    id: 6,
-    img: assets.img0,
-    in: inLink,
-    title: "Eti Dawha, Software Engineer",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
-  {
-    id: 7,
-    img: assets.img2,
-    in: inLink,
-    title: "Tal Vegvizer, CEO & Founder",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
-  {
-    id: 8,
-    img: assets.img1,
-    in: inLink,
-    title: "Emma Gogo, CTO",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
-  },
-  {
-    id: 9,
-    img: assets.img0,
-    in: inLink,
-    title: "Eti Dawha, Software Engineer",
-    description:
-      "Tal is nonummy nibh euismod tindunt ut laoreet dolore magna ate aliquam erat volutpat. Ut wisi enim minim viam, aler tod como.",
+      "I am a fullstack developer with one year of experience. I have the ability to design and implement efficient software solutions to meet the specific needs of clients. I am familiar with the latest technologies and know how to complete projects successfully. I work well alone or with a team and am known for my problem-solving skills and ability to think creatively.",
   },
 ];
 
