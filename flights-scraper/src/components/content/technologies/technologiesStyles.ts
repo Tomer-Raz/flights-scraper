@@ -29,5 +29,5 @@ export const TechnologiesButton = styled.button`
 
 export const ButtonWrap = styled.div`
 position:relative;
-width: 100vw;
+width: 99vw;
 `

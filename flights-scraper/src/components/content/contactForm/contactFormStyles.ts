@@ -18,7 +18,6 @@ export const Input = styled.input`
   width: 330px;
   height: 51px;
   font-size: 17px;
-  padding-left: 15px;
   background-color: #607b8b1c;
   border: none;
   margin-bottom: 10px;
@@ -45,8 +44,6 @@ export const TextArea = styled.textarea`
   min-height: 36vh;
   resize: none;
   font-family: inherit;
-  padding-left: 15px;
-  padding-top: 10px;
   border: none;
   font-size: 17px;
   &:focus {
@@ -81,7 +78,6 @@ export const Form = styled.form`
 
 export const FormButton = styled(ExploreText)`
   background-color: transparent;
-  padding: 15px;
   border: 1px solid #ffffff;
   margin: 0;
   color: #69efad;

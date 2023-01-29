@@ -1,5 +1,4 @@
 import { useState } from "react";
-import{ ReactComponent as VegvizerLogo } from "../../assets/header-container/vegvizerLogo.svg";
 import{ ReactComponent as SidebarLogo } from "../../assets/header-container/SidebarLogo.svg";
 
 import { HeaderContainer, SidebarIconWrap } from "./headerStyles";
@@ -11,7 +10,6 @@ const Header = () => {
   return (
     <div>
       <HeaderContainer>
-        <VegvizerLogo />
         <SidebarIconWrap>
           <SidebarLogo onClick={toggleSidebar} />
         </SidebarIconWrap>

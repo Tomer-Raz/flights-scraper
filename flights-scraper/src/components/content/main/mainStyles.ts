@@ -6,6 +6,7 @@ export const MainWrapper = styled.div`
 `;
 
 export const MainTitle = styled.h1`
+  color: #060a1f;
   font-family: "ImportedRegular";
   text-align: center;
   margin: auto;

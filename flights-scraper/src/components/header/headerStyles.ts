@@ -12,10 +12,9 @@ export const HeaderContainer = styled.div`
   @media only screen and (max-width: 992px) {
     position: fixed;
     top: 0;
-    background-color: #232222;
     width: 100%;
     z-index:2;
-    padding:5px 10px;
+    padding:15px;
   }
 `;
 
