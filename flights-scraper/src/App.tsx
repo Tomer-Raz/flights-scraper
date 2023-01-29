@@ -38,9 +38,6 @@ const App = () => {
       <Element name="ClientList">
         <ClientList />
       </Element>
-      <Element name="Technologies">
-        <Technologies />
-      </Element>
       <Element name="TeamList">
         <TeamList />
       </Element>

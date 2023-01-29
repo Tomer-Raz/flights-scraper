@@ -1,7 +1,6 @@
 import { Link } from "react-scroll";
 import{ ReactComponent as Xsvg } from "../../assets/sidebar/X.svg";
 import{ ReactComponent as LinkedinIcon } from "../../assets/sidebar/LinkedinIcon.svg";
-import{ ReactComponent as VegvizerLogoSidebar } from "../../assets/sidebar/VegvizerLogoSidebar.svg";
 
 import {
   SidebarContainer,
@@ -20,7 +19,6 @@ const Sidebar = (props: any) => {
         <CloseBtnContainer>
           <Xsvg onClick={toggleSidebar} />
         </CloseBtnContainer>
-        <VegvizerLogoSidebar />
         <LinksWrap>
           <LinkWrap>
             <Link

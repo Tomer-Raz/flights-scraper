@@ -1,9 +1,9 @@
 //HEADER
 export const GREET_TXT = "!ברוכים הבאים";
-export const INTRO_TXT1 = "We are Vegvizer, and we ";
-export const INTRO_TXT2 = "create awesome digital";
-export const INTRO_TXT3 = "products that people love";
-export const EXPLORE_BTN_TXT = "Explore our services";
+export const INTRO_TXT1 = "מנוע חיפוש טיסות הראשון מסוגו";
+export const INTRO_TXT2 = "שבאצעותו תוכלו למצוא טיסות במחירים";
+export const INTRO_TXT3 = "המשתלמים ביותר במהירות וללא כל מאמץ";
+export const EXPLORE_BTN_TXT = "בואו נתחיל";
 //PRODUCTS
 export const EXPLORE_TXT = "Coming soon...";
 //SERVICES

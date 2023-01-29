@@ -3,6 +3,7 @@ import triangles from "../../../assets/clients/triangles.svg";
 import { ItemContent } from "../products/productStyles";
 
 export const ClientsWrapper = styled.div`
+  color: #060a1f;
   display: flex;
   align-items: center;
   justify-content: center;
