@@ -12,6 +12,7 @@
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  -webkit-filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -38,4 +39,30 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@font-face {
+  font-family: ImportedBlack;   /*Can be any text*/
+  src: local("FbMatadorEnHeb-Black"),
+    url("./assets/fonts/FbMatadorEnHeb-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: ImportedBold;   /*Can be any text*/
+  src: local("FbMatadorEnHeb-Bold"),
+    url("./assets/fonts/FbMatadorEnHeb-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: ImportedLight;   /*Can be any text*/
+  src: local("FbMatadorEnHeb-Light"),
+    url("./assets/fonts/FbMatadorEnHeb-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: ImportedMedium;   /*Can be any text*/
+  src: local("FbMatadorEnHeb-Medium"),
+    url("./assets/fonts/FbMatadorEnHeb-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: ImportedRegular;   /*Can be any text*/
+  src: local("FbMatadorEnHeb-Regular"),
+    url("./assets/fonts/FbMatadorEnHeb-Regular.ttf") format("truetype");
 }

@@ -1,20 +1,44 @@
-import { useState } from 'react';
 import "./App.css";
+import PageHeaderContainer from "./components/pageHeaderContainer/pageHeaderContainer";
+import ProductList from "./components/content/products/productList";
+import ServicesList from "./components/content/services/serviceList";
+import ClientList from "./components/content/clients/clientList";
+import Technologies from "./components/content/technologies/technologies";
+import TeamList from "./components/content/team/teamList";
+import ContactForm from "./components/content/contactForm/contactForm";
+import Footer from "./components/footer/footer";
+import { Element } from "react-scroll";
+import ParticalBackground from "../src/particals/partical-background.js"
 
 const App = () => {
-  const [data, setData] = useState(null);
 
-  const handleClick = async () => {
-    const response = await fetch("http://localhost:3001/run-script");
-    console.log(response);
-    
-    const result = await response.json();
-    setData(result);
-  }
   return (
-    <div style={{ backgroundColor: "blue" }}>
-      <button onClick={handleClick}>Collect Data</button>
-      {data && <div>{JSON.stringify(data)}</div>}
+    <div className="App">
+      <ParticalBackground/>
+      <Element name="PageHeaderContainer">
+        <PageHeaderContainer />
+      </Element>
+      <Element name="ProductList">
+        <ProductList />
+      </Element>
+      <Element name="ServicesList">
+        <ServicesList />
+      </Element>
+      <Element name="ClientList">
+        <ClientList />
+      </Element>
+      <Element name="Technologies">
+        <Technologies />
+      </Element>
+      <Element name="TeamList">
+        <TeamList />
+      </Element>
+      <Element name="ContactForm">
+        <ContactForm />
+      </Element>
+      <Element name="Footer">
+        <Footer />
+      </Element>
     </div>
   );
 };

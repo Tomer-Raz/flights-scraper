@@ -1,0 +1,87 @@
+//GENERAL
+export { default as greenAndPurpleFlares } from "../assets/main/greenAndPurpleFlares.svg";
+//HEADER
+export { default as devopsIcon1 } from "../assets/products/devops.png";
+export { default as finopsIcon } from "../assets/products/finops.png";
+export { default as terragramLogo } from "../assets/products/terragram.svg";
+export { default as finopsysLogo } from "../assets/products/finopsys.svg";
+//SERVICES
+export { default as devopsIcon2 } from "../assets/services/devops.png";
+export { default as uxuiIcon } from "../assets/services/uxui.png";
+export { default as developmentIcon } from "../assets/services/development.png";
+//CLIENTS
+export { default as clalit } from "../assets/clients/clalit.png";
+export { default as arrowLeft } from "../assets/clients/arrow-left.png";
+export { default as arrowRight } from "../assets/clients/arrow-right.png";
+//TECHNOLOGIES
+export { default as amazon_kinesisLogo } from "./technologies/amazon_kinesis.png";
+export { default as sparkLogo } from "./technologies/spark.png";
+export { default as kafkaLogo } from "./technologies/kafka.png";
+export { default as hadoopLogo } from "./technologies/hadoop.png";
+export { default as databricksLogo } from "./technologies/databricks.png";
+export { default as aerospikeLogo } from "./technologies/aerospike.png";
+export { default as ansibleLogo } from "./technologies/ansible.png";
+export { default as asanaLogo } from "./technologies/asana.png";
+export { default as aspnetcoreLogo } from "./technologies/aspnetcore.png";
+export { default as awsLogo } from "./technologies/aws.png";
+export { default as azureLogo } from "./technologies/azure.png";
+export { default as Azure_iot_hubLogo } from "./technologies/Azure_iot_hub.png";
+export { default as azure_cloudLogo } from "./technologies/azure_cloud.png";
+export { default as azure_cosmos_dbLogo } from "./technologies/azure_cosmos_db.png";
+export { default as azure_devopsLogo } from "./technologies/azure_devops.png";
+export { default as azure_sentinelLogo } from "./technologies/azure_sentinel.png";
+export { default as bitbucketLogo } from "./technologies/bitbucket.png";
+export { default as cider_securityLogo } from "./technologies/cider_security.png";
+export { default as datadogLogo } from "./technologies/datadog.png";
+export { default as dockerLogo } from "./technologies/docker.png";
+export { default as dynamodbLogo } from "./technologies/dynamodb.png";
+export { default as event_hubsLogo } from "./technologies/event_hubs.png";
+export { default as electronLogo } from "./technologies/electron.png";
+export { default as elkLogo } from "./technologies/elk.png";
+export { default as embedded_systemsLogo } from "./technologies/embedded_systems.png";
+export { default as gcpLogo } from "./technologies/gcp.png";
+export { default as githubLogo } from "./technologies/github.png";
+export { default as gitlabLogo } from "./technologies/gitlab.png";
+export { default as javascriptLogo } from "./technologies/javascript.png";
+export { default as jenkinsLogo } from "./technologies/jenkins.png";
+export { default as jfrogLogo } from "./technologies/jfrog.png";
+export { default as jfrog_xrayLogo } from "./technologies/jfrog_xray.png";
+export { default as jitLogo } from "./technologies/jit.png";
+export { default as jiraLogo } from "./technologies/jira.png";
+export { default as k8sLogo } from "./technologies/k8s.png";
+export { default as microsoftLogo } from "./technologies/microsoft.png";
+export { default as mondayLogo } from "./technologies/monday.png";
+export { default as mongodbLogo } from "./technologies/mongodb.png";
+export { default as mssqlLogo } from "./technologies/mssql.png";
+export { default as mysqlLogo } from "./technologies/mysql.png";
+export { default as nagiosLogo } from "./technologies/nagios.png";
+export { default as nexus_artifactoryLogo } from "./technologies/nexus_artifactory.png";
+export { default as nodejsLogo } from "./technologies/nodejs.png";
+export { default as oracleLogo } from "./technologies/oracle.png";
+export { default as orangepiLogo } from "./technologies/orangepi.png";
+export { default as orca_securityLogo } from "./technologies/orca_security.png";
+export { default as postgresqlLogo } from "./technologies/postgresql.png";
+export { default as prometheusLogo } from "./technologies/prometheus.png";
+export { default as pythonLogo } from "./technologies/python.png";
+export { default as raspberryPiLogo } from "./technologies/raspberryPi.png";
+export { default as reactLogo } from "./technologies/react.png";
+export { default as redshiftLogo } from "./technologies/redshift.png";
+export { default as synkLogo } from "./technologies/synk.png";
+export { default as vertxLogo } from "./technologies/vertx.png";
+export { default as vuejsLogo } from "./technologies/vuejs.png";
+export { default as wizLogo } from "./technologies/wiz.png";
+export { default as microsoftDefenderLogo } from "./technologies/microsoftDefender.png";
+//TEAM
+export { default as img0 } from "../assets/team/0.svg";
+export { default as img1 } from "../assets/team/1.svg";
+export { default as img2 } from "../assets/team/2.svg";
+export { default as img3 } from "../assets/team/3.png";
+export { default as img4 } from "../assets/team/4.png";
+export { default as img5 } from "../assets/team/5.png";
+export { default as img6 } from "../assets/team/6.png";
+export { default as img7 } from "../assets/team/7.png";
+//CONTACT-FORM
+export { default as greenLeft } from "../assets/contactForm/green-left.svg";
+export { default as greenRight } from "../assets/contactForm/green-right.svg";
+export { default as purpleLeft } from "../assets/contactForm/purple-left.svg";
+export { default as purpleRight } from "../assets/contactForm/purple-right.svg";
