@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import triangles from "../../../assets/clients/triangles.svg";
 import { ItemContent } from "../products/productStyles";
 
 export const ClientsWrapper = styled.div`

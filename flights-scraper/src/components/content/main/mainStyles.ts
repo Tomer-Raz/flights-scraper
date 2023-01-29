@@ -6,12 +6,12 @@ export const MainWrapper = styled.div`
 `;
 
 export const MainTitle = styled.h1`
-  font-family: "ImportedRegular";
+  font-family: "ImportedBold";
   text-align: center;
   margin: auto;
   margin-top: 12vh;
   margin-bottom: 5vh;
-  font-size: 60px;
+  font-size: 5vw;
   @media only screen and (max-width: 980px) {
     margin-top: 120px;
   }
@@ -26,10 +26,11 @@ export const Intro = styled.p`
   margin-top: 20px;
   text-align: center;
   margin: auto;
-  font-size: 22px;
+  padding-top: 20px;
+  font-size: 2vw;
   @media only screen and (max-width: 680px) {
-    font-size: 17px;
-    max-width: 80%;
+    font-size: 25px;
+    max-width: 90%;
   }
 `;
 export const Span = styled.span`

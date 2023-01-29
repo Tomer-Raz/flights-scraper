@@ -1,8 +1,8 @@
 //HEADER
 export const GREET_TXT = "-ברוכים הבאים ל";
-export const INTRO_TXT1 = "מנוע חיפוש טיסות הראשון מסוגו";
+export const INTRO_TXT1 = ",מנוע חיפוש טיסות הראשון מסוגו";
 export const INTRO_TXT2 = "שבאצעותו תוכלו למצוא טיסות במחירים";
-export const INTRO_TXT3 = "המשתלמים ביותר במהירות וללא כל מאמץ";
+export const INTRO_TXT3 = "!המשתלמים ביותר במהירות וללא כל מאמץ";
 export const EXPLORE_BTN_TXT = "בואו נתחיל";
 //PRODUCTS
 export const EXPLORE_TXT = "Coming soon...";
