@@ -1,13 +1,30 @@
-import ProductPreview from "./productPreview";
-import { ItemsContainer } from "./productStyles";
-import { PRODUCTS } from "../../../constants";
+// import React, { useState } from "react";
+// import { Steps } from "antd";
+// import { Provider } from "./MultiStepFormContext";
+// import Details from "./Details";
+// import Address from "./Address";
+// import Review from "./Review";
 
-export default function ServicesList() {
-  return (
-    <ItemsContainer>
-      {PRODUCTS.map((product) => (
-        <ProductPreview key={product.id} product={product} />
-      ))}
-    </ItemsContainer>
-  );
-}
+// const description = 'This is a description.';
+
+// const MultiStepForm = () => {
+// <Steps
+//     current={1}
+//     items={[
+//       {
+//         title: 'Finished',
+//         description,
+//       },
+//       {
+//         title: 'In Progress',
+//         description,
+//         subTitle: 'Left 00:00:08',
+//       },
+//       {
+//         title: 'Waiting',
+//         description,
+//       },
+//     ]}
+//   />
+// };
+// export default MultiStepForm;

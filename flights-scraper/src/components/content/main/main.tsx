@@ -28,7 +28,7 @@ const Main = () => {
       <Intro>{INTRO_TXT3}</Intro>
       <ExploreWrapper>
         <Link
-          to="ServicesList"
+          to="ProductList"
           spy={true}
           smooth={true}
           offset={-50}
