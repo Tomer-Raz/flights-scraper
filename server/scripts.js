@@ -83,7 +83,7 @@ if (ADD_TROLLY || ADD_BAGGAGE) {
 const timeout = DEFAULT_TIMEOUT * 1000;
 const main = async () => {
   const browser = await webkit.launch({
-    headless: true
+    headless: false
   });
   const context = await browser.newContext();
   const page = await context.newPage();
