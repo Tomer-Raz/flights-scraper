@@ -16,7 +16,7 @@ const steps = [
     content: "Last-content",
   },
 ];
-const MultiStepForm = () => {
+export default function MultiStepForms() {
   const { token } = theme.useToken();
   const [current, setCurrent] = useState(0);
 
@@ -68,4 +68,3 @@ const MultiStepForm = () => {
     </>
   );
 };
-export default MultiStepForm;

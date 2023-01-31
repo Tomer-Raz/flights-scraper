@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { ExploreText, ExploreWrapper } from "../main/mainStyles";
-import { purpleLeft, purpleRight, greenLeft, greenRight } from "../../../assets";
 
 export const FormContainer = styled.div`
   margin: 15vh 0;
-  background-image: url(${purpleLeft}), url(${greenLeft}), url(${purpleRight}), url(${greenRight});
   background-position-x: -10%, 0%, 80%, 120%;
   background-position-y: 80%, 0%, 20%, 40%;
   background-size: 30vw, 40vw, 30vw, 40vw;

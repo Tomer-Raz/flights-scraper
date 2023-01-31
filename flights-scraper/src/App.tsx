@@ -11,7 +11,7 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import MultiStepForm from "./components/content/products/MultiStepForm";
+import MultiStepForms from "./components/content/products/productList"
 
 const App = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -29,13 +29,10 @@ const App = () => {
         <PageHeaderContainer />
       </Element>
       <Element name="ProductList">
-        <MultiStepForm />
+        <MultiStepForms />
       </Element>
       <Element name="ClientList">
         <ClientList />
-      </Element>
-      <Element name="TeamList">
-        <TeamList />
       </Element>
       <Element name="ContactForm">
         <ContactForm />
