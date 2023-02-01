@@ -15,6 +15,18 @@ const steps = [
     title: "Last",
     content: "Last-content",
   },
+  {
+    title: "First",
+    content: "First-content",
+  },
+  {
+    title: "Second",
+    content: "Second-content",
+  },
+  {
+    title: "Last",
+    content: "Last-content",
+  },
 ];
 export default function MultiStepForms() {
   const { token } = theme.useToken();
@@ -42,7 +54,7 @@ export default function MultiStepForms() {
   return (
     <>
       <StepsContainer>
-        <Steps current={current} items={items} />
+        <Steps current={current} items={items} labelPlacement="vertical"/>
         <div style={contentStyle}>{steps[current].content}</div>
         <div style={{ marginTop: 24 }}>
           {current < steps.length - 1 && (
