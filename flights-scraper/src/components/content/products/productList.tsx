@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Button, message, Steps, theme } from "antd";
+import { Button, message, Steps, theme , } from "antd";
 import { StepsContainer } from "./MultiStepForm";
+import { MdFlight } from "react-icons/Md";
 
 const steps = [
   {
-    title: "First",
     content: "First-content",
+    icon: <MdFlight/>
   },
   {
     title: "Second",
@@ -40,7 +41,7 @@ export default function MultiStepForms() {
     setCurrent(current - 1);
   };
 
-  const items = steps.map((item) => ({ key: item.title, title: item.title }));
+  const items = steps.map((item) => ({ key: item.title, title: item.title, icon: item.icon }));
 
   const contentStyle: React.CSSProperties = {
     lineHeight: "260px",
@@ -59,6 +60,7 @@ export default function MultiStepForms() {
         <div style={{ marginTop: 24 }}>
           {current < steps.length - 1 && (
             <Button type="primary" onClick={() => next()}>
+              <MdFlight />
               Next
             </Button>
           )}
