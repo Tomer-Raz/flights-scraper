@@ -1,5 +1,5 @@
 // day of departure
-export const DEPARTURE_DAY = 'friday';
+export const DEPARTURE_DAY = 'thursday';
 
 // day of return
 export const RETURN_DAY = 'tuesday';
@@ -14,7 +14,7 @@ export const ADD_TROLLY = false;
 export const ADD_BAGGAGE = false;
 
 // number of months from now (to start the search). if set to 0, the search will start from today
-export const MONTHS_DELAY = 4;
+export const MONTHS_DELAY = 0;
 
 // city of departure
 export const DEPARTURE_CITY = 'Tel Aviv';
@@ -23,10 +23,10 @@ export const DEPARTURE_CITY = 'Tel Aviv';
 export const DEPARTURE_CITY_URL_PARAM = 'tel-aviv-israel';
 
 // city of return - example: London. search all destinations with 'anywhere'
-export const RETURN_CITY = 'Madrid';
+export const RETURN_CITY = 'Rhodes';
 
 // city-country, example: madrid-spain, london-united-kingdom
-export const RETURN_CITY_URL_PARAM = 'madrid-spain';
+export const RETURN_CITY_URL_PARAM = 'rhodes-greece';
 
 // time (in seconds) between requests (so you will not get blocked by the server)
 export const DEFAULT_TIMEOUT = 5;
@@ -35,7 +35,7 @@ export const DEFAULT_TIMEOUT = 5;
 export const CURRENCY_SYMBOL = '$';
 
 // maximum price you want to pay (for both flights combined)
-export const PRICE_THRESHOLD = 290;
+export const PRICE_THRESHOLD = 150;
 
 // number of weekends from now forward to search
 export const NUMBER_OF_WEEKENDS_TO_SEARCH = 8;
